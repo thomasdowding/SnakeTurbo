@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -37,5 +37,14 @@ public class updateHealthAndPoints : MonoBehaviour {
             //For cosmetic purposes, we don't want health going below 0, so we can use this code to reset it.
 
         }
+
+        else if (Player.Player.health > 100)
+        {
+            Player.Player.health = 100;
+
+            //Similarly, the player's health should not go above 100, so we reset it using this code whenever it does go above 100
+
+        }
 	}
 }
+
